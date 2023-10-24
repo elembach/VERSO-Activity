@@ -8,7 +8,7 @@ with open("numbers.html", "w") as f:
 
     //for numbers 1-50 adds them to the table based on odd or even
     for i in range(1, 50):
-        if i / 2 == 0:
+        if i % 2 == 0:
             f.write("<tr><td>{}</td><td></td></tr>\n".format(i))
         else:
             f.write("<tr><td></td><td>{}</td></tr>\n".format(i))
