@@ -1,15 +1,15 @@
-//method remove_duplicates, takes in an array sorts it and 
+#method remove_duplicates, takes in an array sorts it and 
 
 def remove_duplicates(arr):
-    //sorts array
+    #sorts array
     arr.sort()
     
-    unique_arr;
-    removed_elements;
+    unique_arr
+    removed_elements
 
-    //for the elements in the array if it is the first element or
-    //its not the same as the element before it, than is store it in the unique
-    //array. the rest are stored in removed elements array
+    #for the elements in the array if it is the first element or
+    #its not the same as the element before it, than is store it in the unique
+    #array. the rest are stored in removed elements array
     for i in range(arr):
         if i == 0 or arr[i] != arr[i-1]:
             unique_arr.append(arr[i])
